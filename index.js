@@ -8,7 +8,7 @@
 */
 
 
-var HTMLCutter = {
+module.exports = {
 
   /*
   * Removes the special characters from the html string.
@@ -41,4 +41,4 @@ var HTMLCutter = {
   }
 }
 
-module.exports = HTMLCutter;
+
