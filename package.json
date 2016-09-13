@@ -1,6 +1,6 @@
 {
-  "name": "html_cutter",
-  "version": "1.0.0",
+  "name": "htmlCutter",
+  "version": "0.1.0",
   "description": "removes the effect of the html and the javascript code",
   "main": "index.js",
   "scripts": {
@@ -10,5 +10,13 @@
   "license": "ISC",
   "devDependencies": {
     "mocha": "^3.0.2"
+  },
+  "keywords" : [
+    "html",
+    "cutHTML",
+    "toHTML"
+  ],
+  "scripts": {
+	  "test" : "make test"
   }
 }
