@@ -14,6 +14,7 @@ eg: &lt;h1&gt;Hii!&lt;/h1&gt; will be converted to <h1>Hii!</h1>
   npm install htmlCutter --save
 
 ##Usage
+<code>
   var htmlCutter = require('htmlCutter'),
       cutHTML = htmlCutter.cutHTML,
       toHTML = htmlCutter.toHTML;
@@ -23,6 +24,7 @@ eg: &lt;h1&gt;Hii!&lt;/h1&gt; will be converted to <h1>Hii!</h1>
       htmlString = toHTML(safeString);
 
   console.log('html', html, 'Safe String', safeString, 'htmlString', htmlString);
+</code>
 
 ##Tests
   npm test
