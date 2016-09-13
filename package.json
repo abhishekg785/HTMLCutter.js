@@ -1,0 +1,11 @@
+{
+  "name": "html_cutter",
+  "version": "1.0.0",
+  "description": "removes the effect of the html and the javascript code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abhishek goswami <abhishekg785@gmail.com> (http://abhishekg785.github.io/)",
+  "license": "ISC"
+}
