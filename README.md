@@ -20,9 +20,11 @@ eg: &lt;h1&gt;Hii!&lt;/h1&gt; will be converted to <h1>Hii!</h1>
       cutHTML = htmlCutter.cutHTML,
 
       toHTML = htmlCutter.toHTML;
-
-  var html = '<h1>hi!</h1>',
-
+</code>
+<code>
+  var html = "<h1>hi!</h1>",
+</code>
+<code>
       safeString = cutHTML(html),
 
       htmlString = toHTML(safeString);
