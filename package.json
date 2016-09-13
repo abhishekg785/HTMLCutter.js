@@ -1,5 +1,5 @@
 {
-  "name": "htmlcutter",
+  "name": "htmlCutter",
   "version": "0.1.0",
   "description": "removes the effect of the html and the javascript code",
   "main": "index.js",
