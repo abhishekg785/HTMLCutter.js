@@ -8,7 +8,7 @@ Prevents JS injection and can be used where we need to display the html code int
 eg: <h1>Hii!</h1> will be converted into &lt;h1&gt;Hii!&lt;/&gt; .
 
 toHTML : reverse of what cutHTML do.It converts the string obtained from the cutHTML back into the html string.
-eg: &lt;h1&gt;Hii!&lt;/&gt; will be converted to <h1>Hii!</h1>.
+eg: &lt;h1&gt;Hii!&lt;/h1&gt; will be converted to <h1>Hii!</h1>.
 
 ##Installation
   npm install htmlCutter --save
