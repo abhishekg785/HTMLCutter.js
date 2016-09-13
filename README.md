@@ -16,11 +16,15 @@ eg: &lt;h1&gt;Hii!&lt;/h1&gt; will be converted to <h1>Hii!</h1>
 ##Usage
 <code>
   var htmlCutter = require('htmlCutter'),
+
       cutHTML = htmlCutter.cutHTML,
+
       toHTML = htmlCutter.toHTML;
 
-  var html = '<script>alert("hi!")</script>',
+  var html = '<h1>hi!</h1>',
+
       safeString = cutHTML(html),
+
       htmlString = toHTML(safeString);
 
   console.log('html', html, 'Safe String', safeString, 'htmlString', htmlString);
