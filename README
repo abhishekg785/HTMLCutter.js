@@ -8,33 +8,27 @@ Prevents JS injection and can be used where we need to display the html code int
 eg: <h1>Hii!</h1> will be converted into &lt;h1&gt;Hii!&lt;/h1&gt; .
 
 toHTML : reverse of what cutHTML do.It converts the string obtained from the cutHTML back into the html string.
-eg: &lt;h1&gt;Hii!&lt;/h1&gt; will be converted to <h1>Hii!</h1>
+  eg: &lt;h1&gt;Hii!&lt;/h1&gt; will be converted to <h1>Hii!</h1>
 
-##Installation
+Installation
+============
   npm install htmlCutter --save
 
-##Usage
-<code>
+Usage
+=====
   var htmlCutter = require('htmlCutter'),
-
       cutHTML = htmlCutter.cutHTML,
-
       toHTML = htmlCutter.toHTML;
-</code>
-<code>
-  var html = "<h1>hi!</h1>",
-</code>
-<code>
-      safeString = cutHTML(html),
 
+  var html = "<h1>hi!</h1>",
+      safeString = cutHTML(html),
       htmlString = toHTML(safeString);
 
   console.log('html', html, 'Safe String', safeString, 'htmlString', htmlString);
-</code>
 
-##Tests
+Tests
+=====
   npm test
 
-##Release History
-
-* 0.2.0 Initial Release
+Release History
+  0.2.0 Initial Release
