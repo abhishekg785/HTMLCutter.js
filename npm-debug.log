@@ -25,110 +25,118 @@
 15 verbose addNameTag registry:https://registry.npmjs.org/htmlCutter not in flight; fetching
 16 verbose request uri https://registry.npmjs.org/htmlCutter
 17 verbose request no auth needed
-18 info attempt registry request try #1 at 5:26:36 PM
+18 info attempt registry request try #1 at 5:32:41 PM
 19 verbose request using bearer token for auth
-20 verbose request id a19190b77684a71a
-21 verbose etag "A9LDEQJCHQ7VLW4CJYAGEHJP2"
-22 http request GET https://registry.npmjs.org/htmlCutter
-23 http 304 https://registry.npmjs.org/htmlCutter
-24 verbose headers { 'cache-control': 'max-age=300',
-24 verbose headers   'accept-ranges': 'bytes',
-24 verbose headers   date: 'Tue, 13 Sep 2016 11:57:39 GMT',
-24 verbose headers   via: '1.1 varnish',
-24 verbose headers   connection: 'keep-alive',
-24 verbose headers   'x-served-by': 'cache-sin6923-SIN',
-24 verbose headers   'x-cache': 'MISS',
-24 verbose headers   'x-cache-hits': '0',
-24 verbose headers   'x-timer': 'S1473767859.659318,VS0,VE264',
-24 verbose headers   vary: 'Accept-Encoding' }
-25 silly get cb [ 304,
-25 silly get   { 'cache-control': 'max-age=300',
-25 silly get     'accept-ranges': 'bytes',
-25 silly get     date: 'Tue, 13 Sep 2016 11:57:39 GMT',
-25 silly get     via: '1.1 varnish',
-25 silly get     connection: 'keep-alive',
-25 silly get     'x-served-by': 'cache-sin6923-SIN',
-25 silly get     'x-cache': 'MISS',
-25 silly get     'x-cache-hits': '0',
-25 silly get     'x-timer': 'S1473767859.659318,VS0,VE264',
-25 silly get     vary: 'Accept-Encoding' } ]
-26 verbose etag https://registry.npmjs.org/htmlCutter from cache
-27 verbose get saving htmlCutter to /home/hiro/.npm/registry.npmjs.org/htmlCutter/.cache.json
-28 verbose correctMkdir /home/hiro/.npm correctMkdir not in flight; initializing
-29 silly addNameTag next cb for htmlCutter with tag latest
-30 silly addNamed htmlCutter@0.1.0
-31 verbose addNamed "0.1.0" is a plain semver version for htmlCutter
-32 silly cache afterAdd htmlCutter@0.1.0
-33 verbose afterAdd /home/hiro/.npm/htmlCutter/0.1.0/package/package.json not in flight; writing
-34 verbose correctMkdir /home/hiro/.npm correctMkdir not in flight; initializing
-35 verbose afterAdd /home/hiro/.npm/htmlCutter/0.1.0/package/package.json written
-36 silly publish { name: 'htmlCutter',
-36 silly publish   version: '0.1.0',
-36 silly publish   description: 'removes the effect of the html and the javascript code',
-36 silly publish   main: 'index.js',
-36 silly publish   scripts: { test: 'make test' },
-36 silly publish   author:
-36 silly publish    { name: 'abhishek goswami',
-36 silly publish      email: 'abhishekg785@gmail.com',
-36 silly publish      url: 'http://abhishekg785.github.io/' },
-36 silly publish   license: 'ISC',
-36 silly publish   devDependencies: { mocha: '^3.0.2' },
-36 silly publish   keywords: [ 'html', 'cutHTML', 'toHTML' ],
-36 silly publish   readme: 'HTMLCutter\n==========\n\nA node module that do two things better :\n\ncutHTML : removes all the special characters in the html string so that they can be displayed on the page without execution , as a plain string.\nPrevents JS injection and can be used where we need to display the html code into our web page.\neg: <h1>Hii!</h1> will be converted into &lt;h1&gt;Hii!&lt;/&gt; .\n\ntoHTML : reverse of what cutHTML do.It converts the string obtained from the cutHTML back into the html string.\neg: &lt;h1&gt;Hii!&lt;/h1&gt; will be converted to <h1>Hii!</h1>\n\n##Installation\n  npm install htmlCutter --save\n\n##Usage\n<code>\n  var htmlCutter = require(\'htmlCutter\'),\n\n      cutHTML = htmlCutter.cutHTML,\n\n      toHTML = htmlCutter.toHTML;\n</code>\n<code>\n  var html = "<h1>hi!</h1>",\n</code>\n<code>\n      safeString = cutHTML(html),\n\n      htmlString = toHTML(safeString);\n\n  console.log(\'html\', html, \'Safe String\', safeString, \'htmlString\', htmlString);\n</code>\n\n##Tests\n  npm test\n\n##Release History\n\n* 0.1.0 Initial Release\n',
-36 silly publish   readmeFilename: 'README.md',
-36 silly publish   gitHead: 'facb9e86e47ed194476258549fb8374a67cdec89',
-36 silly publish   _id: 'htmlCutter@0.1.0',
-36 silly publish   _shasum: 'b044506e761f07ab9a30603793da68eceb74f81f',
-36 silly publish   _from: 'htmlCutter@latest' }
-37 info lifecycle htmlCutter@0.1.0~prepublish: htmlCutter@0.1.0
-38 silly lifecycle htmlCutter@0.1.0~prepublish: no script for prepublish, continuing
-39 verbose getPublishConfig undefined
-40 silly mapToRegistry name htmlCutter
-41 silly mapToRegistry using default registry
-42 silly mapToRegistry registry https://registry.npmjs.org/
-43 silly mapToRegistry uri https://registry.npmjs.org/htmlCutter
-44 verbose publish registryBase https://registry.npmjs.org/
-45 silly publish uploading /home/hiro/.npm/htmlCutter/0.1.0/package.tgz
-46 verbose request uri https://registry.npmjs.org/htmlCutter
-47 verbose request sending authorization for write operation
-48 info attempt registry request try #1 at 5:26:59 PM
-49 verbose request using bearer token for auth
-50 http request PUT https://registry.npmjs.org/htmlCutter
-51 http 403 https://registry.npmjs.org/htmlCutter
-52 verbose headers { 'content-type': 'application/json',
-52 verbose headers   'cache-control': 'max-age=300',
-52 verbose headers   'content-length': '95',
-52 verbose headers   'accept-ranges': 'bytes',
-52 verbose headers   date: 'Tue, 13 Sep 2016 11:57:46 GMT',
-52 verbose headers   via: '1.1 varnish',
-52 verbose headers   connection: 'keep-alive',
-52 verbose headers   'x-served-by': 'cache-sin6921-SIN',
-52 verbose headers   'x-cache': 'MISS',
-52 verbose headers   'x-cache-hits': '0',
-52 verbose headers   'x-timer': 'S1473767865.966539,VS0,VE930',
-52 verbose headers   vary: 'Accept-Encoding' }
-53 verbose request invalidating /home/hiro/.npm/registry.npmjs.org/htmlCutter on PUT
-54 error publish Failed PUT 403
-55 verbose stack Error: "You cannot publish over the previously published version 0.1.0." : htmlCutter
-55 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-55 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
-55 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-55 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
-55 verbose stack     at emitTwo (events.js:87:13)
-55 verbose stack     at Request.emit (events.js:172:7)
-55 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
-55 verbose stack     at emitOne (events.js:82:20)
-55 verbose stack     at Request.emit (events.js:169:7)
-55 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
-56 verbose statusCode 403
-57 verbose pkgid htmlCutter
-58 verbose cwd /home/hiro/Desktop/Desktop/NPM/HTMLCutter
-59 error Linux 4.2.0-27-generic
-60 error argv "/usr/bin/nodejs" "/usr/local/bin/npm" "publish" "htmlCutter"
-61 error node v4.3.0
-62 error npm  v3.7.2
-63 error code E403
-64 error "You cannot publish over the previously published version 0.1.0." : htmlCutter
-65 error If you need help, you may report this error at:
-65 error     <https://github.com/npm/npm/issues>
-66 verbose exit [ 1, true ]
+20 verbose request id 3b0a0f65b14e0b06
+21 http request GET https://registry.npmjs.org/htmlCutter
+22 http 200 https://registry.npmjs.org/htmlCutter
+23 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 verbose headers   etag: '"A9LDEQJCHQ7VLW4CJYAGEHJP2"',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'content-encoding': 'gzip',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'transfer-encoding': 'chunked',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Tue, 13 Sep 2016 12:03:28 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+23 verbose headers   'x-cache': 'MISS',
+23 verbose headers   'x-cache-hits': '0',
+23 verbose headers   'x-timer': 'S1473768207.483702,VS0,VE1012',
+23 verbose headers   vary: 'Accept-Encoding' }
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"A9LDEQJCHQ7VLW4CJYAGEHJP2"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'content-encoding': 'gzip',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'transfer-encoding': 'chunked',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Tue, 13 Sep 2016 12:03:28 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-sin6927-SIN',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1473768207.483702,VS0,VE1012',
+24 silly get     vary: 'Accept-Encoding' } ]
+25 verbose get saving htmlCutter to /home/hiro/.npm/registry.npmjs.org/htmlCutter/.cache.json
+26 verbose correctMkdir /home/hiro/.npm correctMkdir not in flight; initializing
+27 silly addNameTag next cb for htmlCutter with tag latest
+28 silly addNamed htmlCutter@0.1.0
+29 verbose addNamed "0.1.0" is a plain semver version for htmlCutter
+30 silly cache afterAdd htmlCutter@0.1.0
+31 verbose afterAdd /home/hiro/.npm/htmlCutter/0.1.0/package/package.json not in flight; writing
+32 verbose correctMkdir /home/hiro/.npm correctMkdir not in flight; initializing
+33 verbose afterAdd /home/hiro/.npm/htmlCutter/0.1.0/package/package.json written
+34 silly publish { name: 'htmlCutter',
+34 silly publish   version: '0.1.0',
+34 silly publish   description: 'removes the effect of the html and the javascript code',
+34 silly publish   main: 'index.js',
+34 silly publish   scripts: { test: 'make test' },
+34 silly publish   author:
+34 silly publish    { name: 'abhishek goswami',
+34 silly publish      email: 'abhishekg785@gmail.com',
+34 silly publish      url: 'http://abhishekg785.github.io/' },
+34 silly publish   license: 'ISC',
+34 silly publish   devDependencies: { mocha: '^3.0.2' },
+34 silly publish   keywords: [ 'html', 'cutHTML', 'toHTML' ],
+34 silly publish   readme: 'HTMLCutter\n==========\n\nA node module that do two things better :\n\ncutHTML : removes all the special characters in the html string so that they can be displayed on the page without execution , as a plain string.\nPrevents JS injection and can be used where we need to display the html code into our web page.\neg: <h1>Hii!</h1> will be converted into &lt;h1&gt;Hii!&lt;/&gt; .\n\ntoHTML : reverse of what cutHTML do.It converts the string obtained from the cutHTML back into the html string.\neg: &lt;h1&gt;Hii!&lt;/h1&gt; will be converted to <h1>Hii!</h1>\n\n##Installation\n  npm install htmlCutter --save\n\n##Usage\n<code>\n  var htmlCutter = require(\'htmlCutter\'),\n\n      cutHTML = htmlCutter.cutHTML,\n\n      toHTML = htmlCutter.toHTML;\n</code>\n<code>\n  var html = "<h1>hi!</h1>",\n</code>\n<code>\n      safeString = cutHTML(html),\n\n      htmlString = toHTML(safeString);\n\n  console.log(\'html\', html, \'Safe String\', safeString, \'htmlString\', htmlString);\n</code>\n\n##Tests\n  npm test\n\n##Release History\n\n* 0.1.0 Initial Release\n',
+34 silly publish   readmeFilename: 'README.md',
+34 silly publish   gitHead: 'facb9e86e47ed194476258549fb8374a67cdec89',
+34 silly publish   _id: 'htmlCutter@0.1.0',
+34 silly publish   _shasum: 'b044506e761f07ab9a30603793da68eceb74f81f',
+34 silly publish   _from: 'htmlCutter@latest' }
+35 info lifecycle htmlCutter@0.1.0~prepublish: htmlCutter@0.1.0
+36 silly lifecycle htmlCutter@0.1.0~prepublish: no script for prepublish, continuing
+37 verbose getPublishConfig undefined
+38 silly mapToRegistry name htmlCutter
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry uri https://registry.npmjs.org/htmlCutter
+42 verbose publish registryBase https://registry.npmjs.org/
+43 silly publish uploading /home/hiro/.npm/htmlCutter/0.1.0/package.tgz
+44 verbose request uri https://registry.npmjs.org/htmlCutter
+45 verbose request sending authorization for write operation
+46 info attempt registry request try #1 at 5:32:47 PM
+47 verbose request using bearer token for auth
+48 http request PUT https://registry.npmjs.org/htmlCutter
+49 http 403 https://registry.npmjs.org/htmlCutter
+50 verbose headers { 'content-type': 'application/json',
+50 verbose headers   'cache-control': 'max-age=300',
+50 verbose headers   'content-length': '95',
+50 verbose headers   'accept-ranges': 'bytes',
+50 verbose headers   date: 'Tue, 13 Sep 2016 12:09:04 GMT',
+50 verbose headers   via: '1.1 varnish',
+50 verbose headers   connection: 'keep-alive',
+50 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+50 verbose headers   'x-cache': 'MISS',
+50 verbose headers   'x-cache-hits': '0',
+50 verbose headers   'x-timer': 'S1473768543.761765,VS0,VE971',
+50 verbose headers   vary: 'Accept-Encoding' }
+51 verbose request invalidating /home/hiro/.npm/registry.npmjs.org/htmlCutter on PUT
+52 error publish Failed PUT 403
+53 verbose stack Error: "You cannot publish over the previously published version 0.1.0." : htmlCutter
+53 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+53 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+53 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+53 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+53 verbose stack     at emitTwo (events.js:87:13)
+53 verbose stack     at Request.emit (events.js:172:7)
+53 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+53 verbose stack     at emitOne (events.js:82:20)
+53 verbose stack     at Request.emit (events.js:169:7)
+53 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+54 verbose statusCode 403
+55 verbose pkgid htmlCutter
+56 verbose cwd /home/hiro/Desktop/Desktop/NPM/HTMLCutter
+57 error Linux 4.2.0-27-generic
+58 error argv "/usr/bin/nodejs" "/usr/local/bin/npm" "publish" "htmlCutter"
+59 error node v4.3.0
+60 error npm  v3.7.2
+61 error code E403
+62 error "You cannot publish over the previously published version 0.1.0." : htmlCutter
+63 error If you need help, you may report this error at:
+63 error     <https://github.com/npm/npm/issues>
+64 verbose exit [ 1, true ]
