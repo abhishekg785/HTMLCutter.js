@@ -1,7 +1,7 @@
 HTMLCutter
 ==========
 
-A node module that do two things better :
+A node package that do two things better :
 
 cutHTML : removes all the special characters in the html string so that they can be displayed on the page without execution , as a plain string.
 Prevents JS injection and can be used where we need to display the html code into our web page.
